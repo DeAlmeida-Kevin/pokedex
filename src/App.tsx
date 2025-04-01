@@ -13,14 +13,12 @@ const pokemonList = [
 	},
 ];
 
-
 function App() {
 	return (
-		<article>
 
-			<PokemonCard pokemon={pokemonList[0]} />
-
-		</article>
+		<div>
+			<PokemonCard pokemon={pokemonList[1]} />
+		</div>
 	);
 }
 
