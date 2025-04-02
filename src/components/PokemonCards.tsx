@@ -1,3 +1,4 @@
+
 interface Pkmninterface {
     pokemon: {
         name: string,
