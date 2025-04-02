@@ -6,12 +6,12 @@ interface Pkmninterface {
     }
 }
 
-function PokemonCard({ pokemon }: Pkmninterface) {
+function PokemonCard({ pokemon: { name, imgSrc } }: Pkmninterface) {
 
     return (
         <figure>
-            {(pokemon.imgSrc) ? <img src={pokemon.imgSrc} /> : <p>???</p>}
-            <figcaption>{pokemon.name}</figcaption>
+            {(imgSrc) ? <img src={imgSrc} /> : <p>???</p>}
+            <figcaption>{name}</figcaption>
         </figure>
     )
 }
