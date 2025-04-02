@@ -1,7 +1,6 @@
 import "./App.css"
 import PokemonCard from "./components/PokemonCards";
 
-
 const pokemonList = [
 	{
 		name: "bulbasaur",
@@ -17,7 +16,7 @@ function App() {
 	return (
 
 		<div>
-			<PokemonCard pokemon={pokemonList[1]} />
+			<PokemonCard pokemon={pokemonList[0]} />
 		</div>
 	);
 }
