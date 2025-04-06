@@ -30,7 +30,7 @@ function App() {
 		<div>
 			<PokemonCard pokemon={pokemon} />
 			<button type="button" onClick={() => setPokemonName("bulbasaur")}>
-				bulbasaur
+				Bulbasaur
 			</button>
 			<button type="button" onClick={() => setPokemonName("mew")}>
 				Mew
