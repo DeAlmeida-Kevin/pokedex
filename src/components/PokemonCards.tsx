@@ -1,19 +1,19 @@
 
-interface Pkmninterface {
-    pokemon: {
-        name: string,
-        imgSrc: string,
+interface PokemonType {
+    pokemons: {
+        name: string;
+        imgSrc?: string;
     }
 }
 
-function PokemonCard({ pokemon: { name, imgSrc } }: Pkmninterface) {
 
-    return (
-        <figure className={`card card--${name.toLowerCase()}`}>
-            {(imgSrc) ? <img src={imgSrc} className="card-img" /> : <p>???</p>}
-            <figcaption>{name}</figcaption>
-        </figure>
-    )
+function PokemonCard({ pokemons }: PokemonType) {
+
+    return pokemons.imgSrc !== undefined ?
+        (<figure>
+            <img src={pokemons.imgSrc} alt="My first pokemon Bulbasaur" />
+            <figcaption>{pokemons.name}</figcaption>
+        </figure>) : <p>???</p>;
 }
 
 export default PokemonCard;
