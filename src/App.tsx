@@ -1,4 +1,5 @@
-import "./App.css"
+import "./App.css";
+import "./components/PKcard.css";
 import PokemonCard from "./components/PokemonCards";
 import { useState } from "react";
 

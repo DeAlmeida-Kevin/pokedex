@@ -9,8 +9,8 @@ interface Pkmninterface {
 function PokemonCard({ pokemon: { name, imgSrc } }: Pkmninterface) {
 
     return (
-        <figure>
-            {(imgSrc) ? <img src={imgSrc} /> : <p>???</p>}
+        <figure className={`card card--${name.toLowerCase()}`}>
+            {(imgSrc) ? <img src={imgSrc} className="card-img" /> : <p>???</p>}
             <figcaption>{name}</figcaption>
         </figure>
     )
