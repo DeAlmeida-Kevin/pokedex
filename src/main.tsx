@@ -9,8 +9,4 @@ if (rootElement == null) {
 	throw new Error(`Your HTML Document must contain a <div id="root"></div>`);
 }
 
-createRoot(rootElement).render(
-	<StrictMode>
-		<App />
-	</StrictMode>,
-);
+createRoot(rootElement).render(<App />);
